@@ -1,9 +1,23 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  let palindromeTest = ''
+  for (let i = 0; i < word.length; i++) {
+    palindromeTest = word[i] + palindromeTest
+  }
+  if (word === palindromeTest) {
+    return true
+  } else if (word !== palindromeTest) {
+    return false
+  }
 }
 
 /* 
   Add your pseudocode here
+
+  function recieve string
+  create a variable equal to the string being iterated with each character being added to the front
+  if the string is equal to new variable, it should pass
+  new variable is essentially mirrored string
 */
 
 /*
